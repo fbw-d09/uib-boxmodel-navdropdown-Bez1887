@@ -1,0 +1,108 @@
+*/*  {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+
+ul:nth-child(1) li:first-letter {
+  color: red;
+}
+
+li:hover {
+  background-color: aqua;
+}
+
+ul li { 
+  display: inline-block;
+  position: relative;
+}
+
+#dropdown navbar {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdown-content ausklappen {
+  display: none;
+  position: absolute;
+}
+
+#dropdown-content a {
+  color: black;
+}
+
+#dropdown:hover {
+  background-color: aqua;
+}
+
+#dropdown-content a {
+  display: block;
+  height: 50px;
+  width: 100px;
+  text-decoration: none;
+  position: relative;
+  right: 40px;
+}
+
+#dropdown:hover #dropdown-content {
+  display: block;
+}
+
+#dropdown-content a:hover {
+  background-color: aqua;
+}
+ */
+
+* {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
+}
+
+nav {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  background: #f2f2f2;
+}
+
+ul:nth-child(1) li:first-letter {
+  color: red;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+  /* damit Unter Shirts die weiteren Optionen anzuzeigen */
+  line-height: 21px;
+  text-align: left;
+}
+
+ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: #333;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: darkorchid;
+}
+
+ul li ul.ausklappen {
+  min-width: 100%; /* Set width of the dropdown */
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+ul .navbar:hover .ausklappen {
+  display: block;
+}
+
+ul li ul.ausklappen li {
+  display: block;
+}
